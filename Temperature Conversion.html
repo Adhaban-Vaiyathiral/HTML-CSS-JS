@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Temperatue Conversion</title>
+        </head>
+    <body>
+        <h2>TEMPERATURE CONVERSION</h2>
+        <script type ="text/javascript">
+    function celsius()
+    {
+        C = document.getElementById("Temperature").value 
+        F = (C*(9/5)+32);
+        document.write(F +" "+ "CELSIUS");
+}
+        function fahrenheit()
+        {
+        F = document.getElementById("Temperature").value 
+        C =(F-32)*(5/9)
+        document.write(C +" "+ "FAHRENHEIT");
+        }
+        </script>
+<form>
+    <input type="text" id="Temperature"> <br> <br>
+    <input type="button" onclick="celsius()" value="Convert to Celsius">
+    <input type="button" onclick="fahrenheit()" value="Convert to Fahrenheit">
+</form>    
+</body>
+</html>

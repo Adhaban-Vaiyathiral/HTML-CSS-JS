@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mouseover</title>
+        </head>
+    <body>
+        <h2 style="color:orangered;">javascript</h2>
+
+    <button id="btn">Mouseover Here.</button>
+  
+    <p style="color:grey;">Button Mouseover <span id="display">0</span> Times.</p>
+  
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onmouseover = function() 
+        {
+            count++;
+            disp.innerHTML = count;
+        }
+
+        </script>
+    </body>
+</html>
